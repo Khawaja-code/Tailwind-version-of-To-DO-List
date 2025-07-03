@@ -25,9 +25,9 @@ project/
 <br>
 ├── src/
 <br>
-│ └── input.css # Tailwind source CSS
+│   └── input.css # Tailwind source CSS
 <br>
-│ └── output.css # Compiled CSS (from Tailwind CLI)
+│   └── output.css # Compiled CSS (from Tailwind CLI)
 <br>
 │
 <br>
