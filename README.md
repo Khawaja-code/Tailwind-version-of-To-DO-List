@@ -20,16 +20,27 @@ A simple and responsive To-Do List web application built using **HTML**, **JavaS
 
 
 project/
+<br>
 │
+<br>
 ├── src/
+<br>
 │ └── input.css # Tailwind source CSS
+<br>
 │ └── output.css # Compiled CSS (from Tailwind CLI)
+<br>
 │
+<br>
 ├── index.html
+<br>
 ├── script.js
+<br>
 ├── package.json
+<br>
 ├── package-lock.json
+<br>
 ├── .gitignore
+<br>
 └── README.md
 
 ## 🧠 Learning Outcomes
