@@ -24,7 +24,8 @@ input.addEventListener("keydown", (evt) => {
 const addevents = (li) => {
     let checkbox = li.querySelector("input")
     let checkedTask = li.querySelector("p")
-
+    let del = li.querySelector("span")
+    if (!checkbox || !checkedTask || !del) return;
     checkbox.addEventListener("change", () => {
         if (checkbox.checked) {
             checkedTask.className = "line-through text-gray-400"
@@ -36,7 +37,6 @@ const addevents = (li) => {
         }
         savedata()
     })
-    let del = li.querySelector("span")
     del.addEventListener("click", () => {
         del.parentElement.remove()
         savedata()
