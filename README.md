@@ -27,8 +27,6 @@ project/
 <br>
 │   └── input.css # Tailwind source CSS
 <br>
-│   └── output.css # Compiled CSS (from Tailwind CLI)
-<br>
 │
 <br>
 ├── index.html
@@ -68,6 +66,6 @@ To run this project locally:
     npm install
 4. Run Tailwind CLI in watch mode:
     ```bash
-    npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+    npm run dev
 
     
