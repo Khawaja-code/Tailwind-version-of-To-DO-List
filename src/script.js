@@ -4,10 +4,13 @@ const add_task = () => {
     if (input.value != "") {
         let li = document.createElement("li")
         li.innerHTML = `
-        <input type="checkbox" class="cursor-pointer w-5 h-5 accent-orange-500"><p>${input.value}</p>
+        <div>
+        <input type="checkbox" class="cursor-pointer w-5 h-5 accent-orange-500">
+        </div>
+        <p>${input.value}</p>
                         <span class="cursor-pointer"> &#10060;</span>
     `
-        li.className = "bg-indigo-900 w-2xs h-10 rounded-2xl flex items-center px-2 justify-between"
+        li.className = "bg-indigo-900 w-2xs min-h-10 rounded-2xl flex items-center p-2 justify-between"
         list.append(li)
         input.value = ""
         addevents(li)
@@ -22,7 +25,7 @@ input.addEventListener("keydown", (evt) => {
     }
 })
 const addevents = (li) => {
-    let checkbox = li.querySelector("input")
+    let checkbox = li.querySelector("div input")
     let checkedTask = li.querySelector("p")
     let del = li.querySelector("span")
     if (!checkbox || !checkedTask || !del) return;
